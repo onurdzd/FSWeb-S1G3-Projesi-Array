@@ -194,8 +194,14 @@ Aşağıdakileri yapmak için ortalamaKelimeSayisi işlevini kullanın:
    Örneğin: ortalamaKelimeSayisi(orijinalTatlar) 0 ile 2 arasında bir sayı döndürmelidir.
 */
 
-function ortalamaKelimeSayisi(/*kod buraya*/) {
-  /*kod buraya*/
+function ortalamaKelimeSayisi(a) {
+  let kelimeSayisi=0;
+  diziSayı=a.length;
+  for(let i = 0 ; i< a.length ; i++){
+    kelimeSayisi+=Number(a[i].split(" ").length)
+    console.log(kelimeSayisi)
+  }
+  return kelimeSayisi/diziSayı
 }
 
 /* ALIŞTIRMA 2:
